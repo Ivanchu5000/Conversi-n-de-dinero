@@ -1,0 +1,68 @@
+#primos{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10%;
+    color: black;
+    background-color: rgba(218, 181, 125, 0.263);
+    border-width: 10px;
+    border-color: rgb(231, 189, 126);
+}
+
+#grados{
+    border-radius: 10%;
+    width: 160px;
+}
+
+#dinero{
+    border-radius: 10
+}
+
+/*Estilo del botón*/
+
+#botonHalloween {
+    --b: 3px;   /* border thickness */
+    --s: .15em; /* size of the corner */
+    --c: #BD5532;
+    
+    padding: calc(.05em + var(--s)) calc(.3em + var(--s));
+    color: var(--c);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--c) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .2em;
+  }
+  #botonHalloween:hover,
+  #botonHalloween:focus-visible{
+    --_p: 0px;
+    outline-color: var(--c);
+    outline-offset: .05em;
+  }
+  #botonHalloween:active {
+    background: var(--c);
+    color: #fff;
+  }
+  
+  body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    place-content: center;
+    background-image: url("assets/fondo/fondo_halloween.jpg");
+  }
+  #botonHalloween {
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    cursor: pointer;
+    border: none;
+    margin: .1em;
+    border: #f2ff00a7;
+  }
+  #botonHalloween {
+    -webkit-text-stroke: 3px black;
+  }
